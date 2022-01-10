@@ -1,0 +1,43 @@
+{
+  "name": "byond-fetch",
+  "version": "1.0.0",
+  "description": "Fetch Byond-based server topics",
+  "author": "ss220.space",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ss220-space/byond-fetch"
+  },
+  "bugs": {
+    "url": "https://github.com/ss220-space/byond-fetch/issues"
+  },
+  "homepage": "https://github.com/ss220-space/byond-fetch",
+  "keywords": [
+    "byond",
+    "dreammaker",
+    "dm",
+    "dreamdaemon",
+    "fetch",
+    "promise",
+    "topic"
+  ],
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "main": "index.js",
+  "typings": "lib/**/*.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "packageManager": "yarn@3.1.1",
+  "scripts": {
+    "compile": "tsc --pretty --project ."
+  },
+  "dependencies": {
+    "promise-socket": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.8",
+    "typescript": "^4.5.4"
+  }
+}
