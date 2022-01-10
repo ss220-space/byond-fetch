@@ -1,1 +1,1 @@
-module.exports = require("./lib/byond-topic")
+module.exports = require("./lib/byond-fetch")

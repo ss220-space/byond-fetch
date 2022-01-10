@@ -1,6 +1,6 @@
 {
   "name": "byond-fetch",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Fetch Byond-based server topics",
   "author": "ss220.space",
   "license": "MIT",
@@ -25,7 +25,7 @@
     "node": ">=10.0.0"
   },
   "main": "index.js",
-  "typings": "lib/**/*.d.ts",
+  "types": "lib/byond-fetch.d.ts",
   "files": [
     "lib/**/*"
   ],

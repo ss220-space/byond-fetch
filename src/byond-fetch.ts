@@ -101,7 +101,7 @@ async function readResponse(socket: PromiseSocket<net.Socket>): Promise<string |
  * @param request ip, port, topic name to fetch
  * @param timeout Communication timeout
  */
-export default async function fetchTopic(request: TopicRequest, timeout = 2000): Promise<string | number | null> {
+export async function fetchTopic(request: TopicRequest, timeout = 2000): Promise<string | number | null> {
   const socket = new PromiseSocket(new net.Socket({
     readable: true,
     writable: true,
