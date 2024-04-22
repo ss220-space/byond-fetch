@@ -1,6 +1,6 @@
 {
   "name": "byond-fetch",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Fetch Byond-based server topics",
   "author": "ss220.space",
   "license": "MIT",
