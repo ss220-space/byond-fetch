@@ -35,7 +35,7 @@ enum ResponseDataType {
  */
 async function writeRequest(socket: PromiseSocket<net.Socket>, topic: string) {
   let parameters = topic;
-  if (parameters.charAt(0) !== '?') parameters = `'?${parameters}`;
+  if (parameters.charAt(0) !== '?') parameters = `?${parameters}`;
 
   const header = Buffer.from(HEADER_PREFIX)
 
