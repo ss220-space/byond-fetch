@@ -87,7 +87,7 @@ async function readResponse(socket: PromiseSocket<net.Socket>): Promise<string |
       if (payloadSize != 4) throw Error('Unexpected size for float')
 
       const data = await socket.read(payloadSize) as Buffer
-      return data.readFloatBE()
+      return data.readFloatLE()
     }
     case ResponseDataType.String: {
       const data = await socket.read(payloadSize) as Buffer
