@@ -35,7 +35,7 @@ enum ResponseDataType {
  */
 async function writeRequest(socket: PromiseSocket<net.Socket>, topic: string) {
   let parameters = topic;
-  if (parameters.charAt(0) !== '?') parameters = `'?${parameters}`;
+  if (parameters.charAt(0) !== '?') parameters = `?${parameters}`;
 
   const header = Buffer.from(HEADER_PREFIX)
 
@@ -87,7 +87,7 @@ async function readResponse(socket: PromiseSocket<net.Socket>): Promise<string |
       if (payloadSize != 4) throw Error('Unexpected size for float')
 
       const data = await socket.read(payloadSize) as Buffer
-      return data.readFloatBE()
+      return data.readFloatLE()
     }
     case ResponseDataType.String: {
       const data = await socket.read(payloadSize) as Buffer
